@@ -1,0 +1,155 @@
+{
+  "setting": {
+    "weak": "AlexNet fc7 linear probe",
+    "strong": "DINO ViT-B/8 CLS linear probe",
+    "data": "CIFAR-10",
+    "n_weak_train": 20000,
+    "n_w2s_train": 25000,
+    "n_cal": 5000,
+    "n_test": 10000,
+    "epochs": 20,
+    "n_boot": 5,
+    "alpha_max": 0.75,
+    "conformal_level": 0.9,
+    "device": "cuda"
+  },
+  "weak": {
+    "acc": 0.7975000143051147,
+    "ece": 0.11959486543134927,
+    "nll": 0.9037184715270996,
+    "brier": 0.32109037041664124,
+    "mean_conf": 0.9170949459075928,
+    "weak_label_acc_on_w2s_split": 0.7960799932479858
+  },
+  "ceiling": {
+    "acc": 0.9672999978065491,
+    "ece": 0.015424051957602077,
+    "nll": 0.12132459878921509,
+    "brier": 0.05165572464466095,
+    "mean_conf": 0.9827240109443665,
+    "ensemble": {
+      "acc": 0.9700000286102295,
+      "ece": 0.010249372529037834,
+      "nll": 0.10727674514055252,
+      "brier": 0.0471741259098053,
+      "mean_conf": 0.978203535079956
+    },
+    "member_acc": [
+      0.9664000272750854,
+      0.9656999707221985,
+      0.9679999947547913,
+      0.9645000100135803,
+      0.9674000144004822
+    ],
+    "share_errors_imitated": 0.3792048990726471,
+    "n_corrected": 1822,
+    "n_imitated": 124,
+    "n_weak_errors": 2025,
+    "mean_conf_correct": 0.9891095161437988,
+    "mean_conf_imitated_errors": 0.8382131457328796,
+    "mean_conf_other_errors": 0.7667227387428284,
+    "auroc_err_maxprob": 0.9479257658142988,
+    "auroc_err_entropy": 0.9479607002182373,
+    "auroc_err_ens_mi": 0.9427319587628866,
+    "auroc_imitated_vs_correct_maxprob": 0.9257652661382031,
+    "conformal_weak_cal": {
+      "qhat": 0.9999936819076538,
+      "coverage_true": 0.9995999932289124,
+      "mean_set_size": 2.262700080871582
+    },
+    "conformal_true_cal": {
+      "qhat": 0.016785264015197754,
+      "coverage_true": 0.8932999968528748,
+      "mean_set_size": 0.8999000191688538
+    }
+  },
+  "naive": {
+    "acc": 0.8880000114440918,
+    "ece": 0.08256356720226324,
+    "nll": 0.37329649925231934,
+    "brier": 0.17801940441131592,
+    "mean_conf": 0.8054757714271545,
+    "ensemble": {
+      "acc": 0.8938999772071838,
+      "ece": 0.08823487401484277,
+      "nll": 0.3635652959346771,
+      "brier": 0.17297454178333282,
+      "mean_conf": 0.8057040572166443
+    },
+    "member_acc": [
+      0.8654000163078308,
+      0.8671000003814697,
+      0.8702999949455261,
+      0.8694000244140625,
+      0.8694999814033508
+    ],
+    "share_errors_imitated": 0.35357141494750977,
+    "n_corrected": 1364,
+    "n_imitated": 396,
+    "n_weak_errors": 2025,
+    "mean_conf_correct": 0.8378312587738037,
+    "mean_conf_imitated_errors": 0.595852255821228,
+    "mean_conf_other_errors": 0.5232861042022705,
+    "auroc_err_maxprob": 0.8796645752895753,
+    "auroc_err_entropy": 0.8556173584298584,
+    "auroc_err_ens_mi": 0.8203571404847959,
+    "auroc_imitated_vs_correct_maxprob": 0.8383167258167258,
+    "conformal_weak_cal": {
+      "qhat": 0.8893837928771973,
+      "coverage_true": 0.9754999876022339,
+      "mean_set_size": 1.5117000341415405
+    },
+    "conformal_true_cal": {
+      "qhat": 0.651547908782959,
+      "coverage_true": 0.9010000228881836,
+      "mean_set_size": 1.0334999561309814
+    },
+    "pgr": 0.5329800113803461,
+    "pgr_best_epoch": 0.77149584856066
+  },
+  "conf": {
+    "acc": 0.9401999711990356,
+    "ece": 0.026865387595771516,
+    "nll": 0.19425371289253235,
+    "brier": 0.09330154955387115,
+    "mean_conf": 0.9133345484733582,
+    "ensemble": {
+      "acc": 0.9398999810218811,
+      "ece": 0.03908069681653646,
+      "nll": 0.20380675792694092,
+      "brier": 0.09747879952192307,
+      "mean_conf": 0.9011378884315491
+    },
+    "member_acc": [
+      0.9251999855041504,
+      0.9240000247955322,
+      0.9251000285148621,
+      0.9258000254631042,
+      0.9286999702453613
+    ],
+    "share_errors_imitated": 0.4046822786331177,
+    "n_corrected": 1645,
+    "n_imitated": 242,
+    "n_weak_errors": 2025,
+    "mean_conf_correct": 0.9301546812057495,
+    "mean_conf_imitated_errors": 0.7076404094696045,
+    "mean_conf_other_errors": 0.6089420318603516,
+    "auroc_err_maxprob": 0.9132496181343328,
+    "auroc_err_entropy": 0.9030537870331439,
+    "auroc_err_ens_mi": 0.8793555939944049,
+    "auroc_imitated_vs_correct_maxprob": 0.8774183794198878,
+    "conformal_weak_cal": {
+      "qhat": 0.9660689830780029,
+      "coverage_true": 0.9926999807357788,
+      "mean_set_size": 1.5283000469207764
+    },
+    "conformal_true_cal": {
+      "qhat": 0.3500322699546814,
+      "coverage_true": 0.8925999999046326,
+      "mean_set_size": 0.920799970626831
+    },
+    "pgr": 0.8404002989359272,
+    "pgr_best_epoch": 0.8910484556322709
+  },
+  "runtime_s": 46.89786982536316
+}

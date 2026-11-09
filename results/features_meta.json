@@ -1,0 +1,20 @@
+{
+  "device": "cuda",
+  "torch": "2.14.1+cu130",
+  "alexnet_train_shape": [
+    50000,
+    4096
+  ],
+  "alexnet_test_shape": [
+    10000,
+    4096
+  ],
+  "dino_train_shape": [
+    50000,
+    768
+  ],
+  "dino_test_shape": [
+    10000,
+    768
+  ]
+}

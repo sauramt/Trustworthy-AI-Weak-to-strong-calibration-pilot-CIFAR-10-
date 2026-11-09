@@ -1,0 +1,8 @@
+# Weak-to-strong calibration pilot. Python >= 3.10.
+# Original run: torch 2.14.1+cu130 on Ubuntu with an RTX 5060 (8 GB). Other versions were not tested.
+# Install torch/torchvision FIRST with the command for your CUDA version from https://pytorch.org/get-started/locally/
+# (on Google Colab they are pre-installed: skip them).
+torch
+torchvision
+numpy
+matplotlib
